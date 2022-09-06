@@ -11,6 +11,12 @@
 		// Configure properties specific to codespaces
 		"codespaces": {
 			"repositories": {
+				"jtcressy-home/edge-images": {
+					"permissions": "write-all"
+				},
+				"jtcressy-home/infra": {
+					"permissions": "write-all"
+				},
 				"jtcressy-home/tailnet-config": {
 					"permissions": "write-all"
 				},
