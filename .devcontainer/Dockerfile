@@ -44,8 +44,8 @@ COPY --from=cloudflare/cloudflared:2022.8.0 /usr/local/bin/cloudflared /usr/loca
 COPY --from=envcli/kubectx /usr/local/bin/kubectx /usr/local/bin/kubectx
 COPY --from=envcli/kubectx /usr/local/bin/kubens /usr/local/bin/kubens
 
-COPY --from=ghcr.io/tailscale/tailscale:v1.28.0 /usr/local/bin/tailscale /usr/local/bin/tailscale
-COPY --from=ghcr.io/tailscale/tailscale:v1.28.0 /usr/local/bin/tailscaled /usr/local/bin/tailscaled
+COPY --from=ghcr.io/tailscale/tailscale /usr/local/bin/tailscale /usr/local/bin/tailscale
+COPY --from=ghcr.io/tailscale/tailscale /usr/local/bin/tailscaled /usr/local/bin/tailscaled
 
 COPY --from=quay.io/derailed/k9s /bin/k9s /usr/local/bin/k9s
 
